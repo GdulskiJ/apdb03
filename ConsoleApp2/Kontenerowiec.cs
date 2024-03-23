@@ -86,5 +86,11 @@ public class Kontenerowiec
  {
   return kontenerywkontenerowcu.Find(kontener => kontener.NumerSeryjny.Equals(numerSeryjny));
  }
+
+ public static void zamienKontener(Kontenerowiec k1, Kontenerowiec k2, Kontener kontener)
+ {
+  k1.odłaczkontener(kontener);
+  k2.załadujkontener(kontener);
+ }
 }
  

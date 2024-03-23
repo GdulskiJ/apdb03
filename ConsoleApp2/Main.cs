@@ -83,26 +83,30 @@ foreach (Kontener kontener in Kontener.wszystkiekontenery)
 {
     Console.WriteLine(kontener.show());
 }
-Console.WriteLine(k1.ToString());
-k1.zamienKontener("KON-L-3", "KON-L-2");
-Console.WriteLine("wszystkiek kontenery");
-foreach (Kontener kontener in Kontener.wszystkiekontenery)
-{
-    Console.WriteLine(kontener.show());
-}
-Console.WriteLine(k1.ToString());
+// //Zastąpienie kontenera na statku o danym numerze innymkontenerem
+// Console.WriteLine("aaaaaaaaaaaaaaaaa");
+// Console.WriteLine(k1.ToString());
+// k1.zamienKontener("KON-L-3", "KON-L-2");
+// Console.WriteLine("wszystkiek kontenery");
+// foreach (Kontener kontener in Kontener.wszystkiekontenery)
+// {
+//     Console.WriteLine(kontener.show());
+// }
+// Console.WriteLine(k1.ToString());
 
-
-Kontener d = new Kontenerynapłyny(0, 10, 10,6,1000, true);
-
-Kontenerowiec k2 = new Kontenerowiec(10, 5, 10000);
-k1.załadujkontener(d);
-Console.WriteLine(k1.ToString());
-Console.WriteLine(k2.ToString());
-k1.odłaczkontener(d);
-Console.WriteLine(k1.ToString());
-Console.WriteLine(k2.ToString());
-k2.załadujkontener(d);
-Console.WriteLine(k1.ToString());
-Console.WriteLine(k2.ToString());
-Console.WriteLine(Kontener.ZnajdzKontener("KON-C-1").ToString());
+// //-----
+// Kontener d = new Kontenerynapłyny(0, 10, 10,6,1000, true);
+// Kontenerowiec k2 = new Kontenerowiec(10, 5, 10000);
+// //Możliwość przeniesienie kontenera między dwoma statkami
+// Console.WriteLine(k1.ToString());
+// k1.załadujkontener(d);
+// Console.WriteLine(k1.ToString());
+//
+// Kontenerowiec.zamienKontener(k1,k2,d);
+// Console.WriteLine(k2.ToString());
+// Console.WriteLine(d.ToString());
+//
+// //Wypisanie informacji o danym kontenerze
+// Console.WriteLine(Kontener.ZnajdzKontener("KON-C-1").ToString());
+// //Wypisanie informacji o danym statku i jego ładunku
+// Console.WriteLine(k1.ToString());
